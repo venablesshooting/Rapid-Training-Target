@@ -13,9 +13,9 @@ struct_message myData;
 
 void runsequence();
 
-int Blue = 16;
-int Red = 7;
-int Green = 15;
+int Blue = GPIO_NUM_6;
+int Red = GPIO_NUM_4;
+int Green = GPIO_NUM_5;
 
 
 // callback function that will be executed when data is received
