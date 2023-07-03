@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "7.0.5"
     },
-    "CreationDate": "2023-06-18T10:33:00+01:00"
+    "CreationDate": "2023-07-03T12:40:55+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "Rapid Training Target",
       "GUID": "52617069-6420-4547-9261-696e696e6720",
-      "Revision": "A"
+      "Revision": "B"
     },
     "Size": {
       "X": 190.1,
-      "Y": 28.35
+      "Y": 32.1
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -24,10 +24,10 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.2,
-      "PadToTrack": 0.2,
+      "PadToPad": 0.127,
+      "PadToTrack": 0.127,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.25,
+      "MinLineWidth": 0.2,
       "TrackToRegion": 0.5,
       "RegionToRegion": 0.5
     }

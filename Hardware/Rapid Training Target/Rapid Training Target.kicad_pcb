@@ -1779,6 +1779,9 @@
 
   (gr_rect (start 35 69.999) (end 225 101.999)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 80d184f3-dc47-4924-ae22-a002378a35ff))
+  (gr_text "Rapid Training Box\n© Thomas Whyte-Venables 2023\nRev B\n" (at 130 95.4) (layer "B.Mask") (tstamp 10001928-4829-4f1e-96da-4147a30d3ce2)
+    (effects (font (size 2 2) (thickness 0.3)) (justify mirror))
+  )
 
   (via (at 215.138 91.186) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 1) (tstamp 85463016-c1c0-4a34-aa4c-accf960b4e3e))
   (via (at 190.609 100.0655) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 1) (tstamp c867c88e-d271-4b86-bf43-5a3d1b9a9e90))
