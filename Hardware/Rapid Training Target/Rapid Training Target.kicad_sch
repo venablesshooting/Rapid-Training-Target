@@ -2088,7 +2088,7 @@
   (symbol (lib_id "Device:R") (at 38.1 166.37 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 34f6ae11-370e-4432-b105-8756d3d1c9df)
-    (property "Reference" "R2" (at 40.64 165.1 0)
+    (property "Reference" "R4" (at 40.64 165.1 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5k1" (at 40.64 167.64 0)
@@ -2105,7 +2105,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "R2") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -2380,7 +2380,7 @@
   (symbol (lib_id "Device:R") (at 88.9 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a3ddbc8a-5830-49a4-a953-e8d78828dbf1)
-    (property "Reference" "R10" (at 85.09 54.61 0)
+    (property "Reference" "R3" (at 85.09 54.61 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2.7k" (at 82.55 57.15 0)
@@ -2397,7 +2397,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "R10") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
       (project "Training Aid-B"
@@ -2477,7 +2477,7 @@
   (symbol (lib_id "Device:R") (at 99.06 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c52aa1ec-dec9-410e-ab03-fa86d2dfdd7e)
-    (property "Reference" "R12" (at 100.33 44.45 0)
+    (property "Reference" "R2" (at 100.33 44.45 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.5k" (at 100.33 46.99 0)
@@ -2494,7 +2494,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "R12") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
       (project "Training Aid-B"
@@ -2558,7 +2558,7 @@
   (symbol (lib_id "personal2:ESP32-­C3-­MINI­-1") (at 207.01 64.77 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d786ae8c-2b1c-4de1-b115-8232023039b8)
-    (property "Reference" "U3" (at 181.61 59.69 0)
+    (property "Reference" "U2" (at 181.61 59.69 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "ESP32-C3-MINI-1-N4" (at 181.61 62.23 0)
@@ -2626,7 +2626,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "U3") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -2661,7 +2661,7 @@
   (symbol (lib_id "Device:R") (at 35.56 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e4b917a6-cbef-4890-b0a6-a3f2c75478a0)
-    (property "Reference" "R1" (at 33.02 165.1 0)
+    (property "Reference" "R5" (at 33.02 165.1 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5k1" (at 34.29 167.64 0)
@@ -2678,7 +2678,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "R1") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -2687,7 +2687,7 @@
   (symbol (lib_id "Regulator_Linear:MIC5504-3.3YM5") (at 34.29 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e52d30b1-e686-4fdc-b26b-75a64cf0589a)
-    (property "Reference" "U2" (at 34.29 93.98 0)
+    (property "Reference" "U1" (at 34.29 93.98 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MIC5504-3.3YM5" (at 34.29 96.52 0)
@@ -2707,7 +2707,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "U2") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -2716,7 +2716,7 @@
   (symbol (lib_id "Device:R") (at 93.98 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fb5ae3c5-e036-4437-a506-565021ef1689)
-    (property "Reference" "R11" (at 90.17 49.53 0)
+    (property "Reference" "R1" (at 90.17 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5.6k" (at 88.9 52.07 0)
@@ -2733,7 +2733,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "R11") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
       (project "Training Aid-B"
