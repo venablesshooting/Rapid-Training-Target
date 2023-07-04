@@ -13,9 +13,9 @@ struct_message myData;
 
 void runsequence();
 
-int Blue = GPIO_NUM_6;
-int Red = GPIO_NUM_4;
-int Green = GPIO_NUM_5;
+const int Blue = GPIO_NUM_6;
+const int Green = GPIO_NUM_4;
+const int Red = GPIO_NUM_5;
 
 
 // callback function that will be executed when data is received
@@ -34,9 +34,9 @@ void setup() {
   pinMode(Red, OUTPUT);
   pinMode(Green, OUTPUT);
   pinMode(Blue, OUTPUT);
-  digitalWrite(Red, LOW);
-  digitalWrite(Green, LOW);
-  digitalWrite(Blue, LOW);
+  digitalWrite(Red, HIGH);
+  digitalWrite(Green, HIGH);
+  digitalWrite(Blue, HIGH);
 
   // Initialize Serial Monitor
   Serial.begin(115200);
@@ -46,15 +46,15 @@ void setup() {
 
   // Init ESP-NOW
   if (esp_now_init() != ESP_OK) {
-    Serial.println("Error initializing ESP-NOW");
     digitalWrite(GPIO_NUM_8, HIGH);
     return;
   }
   digitalWrite(GPIO_NUM_8, LOW);
-  Serial.println("No Error initializing ESP-NOW");
+  /*
   Serial.print("ESP Board BASE MAC Address:  ");
   Serial.println(WiFi.macAddress());
   
+
   uint8_t sta_mac[6];
   char buffer [6];
   esp_efuse_mac_get_default(sta_mac);
@@ -71,29 +71,18 @@ void setup() {
   Serial.print("STATION MAC Address:  ");
   
   sprintf(buffer, "%02X:%02X:%02X:%02X:%02X:%02X", sta_mac[0], sta_mac[1], sta_mac[2], sta_mac[3], sta_mac[4], sta_mac[5], sta_mac[6]);
-  Serial.println(buffer);
-
-  esp_read_mac(sta_mac, ESP_MAC_BT);
-
-  Serial.print("BLUETOOTH MAC Address:  ");
-  
-  sprintf(buffer, "%02X:%02X:%02X:%02X:%02X:%02X", sta_mac[0], sta_mac[1], sta_mac[2], sta_mac[3], sta_mac[4], sta_mac[5], sta_mac[6]);
-  Serial.println(buffer);
-
-  esp_read_mac(sta_mac, ESP_MAC_ETH);
-
-  Serial.print("ETHERNET MAC Address:  ");
-  
-  sprintf(buffer, "%02X:%02X:%02X:%02X:%02X:%02X", sta_mac[0], sta_mac[1], sta_mac[2], sta_mac[3], sta_mac[4], sta_mac[5], sta_mac[6]);
-  Serial.println(buffer);
+  Serial.println(buffer); 
+  */
 
   // Once ESPNow is successfully Init, we will register for recv CB to
   // get recv packer info
   esp_now_register_recv_cb(OnDataRecv);
+  myData.b = 8;
+
 }
  
 void loop() {
-
+    runsequence();
 }
 
 void runsequence() {
@@ -164,15 +153,15 @@ void runsequence() {
       break;
 
     case 8://rapid fire 8s
-      digitalWrite(Red, HIGH);
+      analogWrite(Red, LOW);
       delay(7000);
-      digitalWrite(Red, LOW);
-      digitalWrite(Green, HIGH);
-      delay(8000);
-      digitalWrite(Green, LOW);
       digitalWrite(Red, HIGH);
-      delay(10000);
-      digitalWrite(Red, LOW);
+      digitalWrite(Green, LOW);
+      delay(8000);
+      digitalWrite(Green, HIGH);
+      //digitalWrite(Red, LOW);
+      //delay(10000);
+      //digitalWrite(Red, HIGH);
       break;
   }
 }
