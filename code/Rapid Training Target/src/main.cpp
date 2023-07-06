@@ -82,7 +82,7 @@ void setup() {
 }
  
 void loop() {
-    runsequence();
+    //runsequence();
 }
 
 void runsequence() {
@@ -159,9 +159,9 @@ void runsequence() {
       digitalWrite(Green, LOW);
       delay(8000);
       digitalWrite(Green, HIGH);
-      //digitalWrite(Red, LOW);
-      //delay(10000);
-      //digitalWrite(Red, HIGH);
+      digitalWrite(Red, LOW);
+      delay(10000);
+      digitalWrite(Red, HIGH);
       break;
   }
 }
