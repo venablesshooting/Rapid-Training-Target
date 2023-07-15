@@ -16,20 +16,16 @@ void runsequence();
 const int Blue = GPIO_NUM_6;
 const int Green = GPIO_NUM_4;
 const int Red = GPIO_NUM_5;
-
+bool active = 0;
 
 // callback function that will be executed when data is received
 void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
   memcpy(&myData, incomingData, sizeof(myData));
-  //Serial.print("Bytes received: ");
-  //Serial.println(len);
-  //Serial.print("Series: ");
-  //Serial.println(myData.b);
   runsequence();
+  
 }
  
 void setup() {
-
   pinMode(GPIO_NUM_8, OUTPUT);
   pinMode(Red, OUTPUT);
   pinMode(Green, OUTPUT);
@@ -77,79 +73,38 @@ void setup() {
   // Once ESPNow is successfully Init, we will register for recv CB to
   // get recv packer info
   esp_now_register_recv_cb(OnDataRecv);
-  myData.b = 8;
 
 }
  
 void loop() {
-    //runsequence();
 }
 
 void runsequence() {
   switch (myData.b) {
     case 0:
-      break;
-    case 1: //sport pistol
-      digitalWrite(Red, HIGH);
-      delay(7000);
-      digitalWrite(Red, LOW);
-      digitalWrite(Green, HIGH);
-      delay(3000);
-      digitalWrite(Green, LOW);
-      digitalWrite(Red, HIGH);
-      delay(7000);
-      digitalWrite(Red, LOW);
-      digitalWrite(Green, HIGH);
-      delay(3000);
-      digitalWrite(Green, LOW);
-      digitalWrite(Red, HIGH);
-      delay(7000);
-      digitalWrite(Red, LOW);
-      digitalWrite(Green, HIGH);
-      delay(3000);
-      digitalWrite(Green, LOW);
-      digitalWrite(Red, HIGH);
-      delay(7000);
-      digitalWrite(Red, LOW);
-      digitalWrite(Green, HIGH);
-      delay(3000);
-      digitalWrite(Green, LOW);
-      digitalWrite(Red, HIGH);
-      delay(7000);
-      digitalWrite(Red, LOW);
-      digitalWrite(Green, HIGH);
-      delay(3000);
-      digitalWrite(Green, LOW);
-      digitalWrite(Red, HIGH);
-      delay(10000);
-      digitalWrite(Red, LOW);
-      break;
-    
-    case 3: // Standard pistol
-      break;
-    
+      break;        
     case 4: //rapid 4s
-      digitalWrite(Red, HIGH);
+      analogWrite(Red, LOW);
       delay(7000);
-      digitalWrite(Red, LOW);
-      digitalWrite(Green, HIGH);
-      delay(4000);
-      digitalWrite(Green, LOW);
       digitalWrite(Red, HIGH);
-      delay(10000);
+      digitalWrite(Green, LOW);
+      delay(4000);
+      digitalWrite(Green, HIGH);
       digitalWrite(Red, LOW);
+      delay(3000);
+      digitalWrite(Red, HIGH);
       break;
 
     case 6: //rapid 6s
-      digitalWrite(Red, HIGH);
+     analogWrite(Red, LOW);
       delay(7000);
-      digitalWrite(Red, LOW);
-      digitalWrite(Green, HIGH);
-      delay(6000);
-      digitalWrite(Green, LOW);
       digitalWrite(Red, HIGH);
-      delay(10000);
+      digitalWrite(Green, LOW);
+      delay(6000);
+      digitalWrite(Green, HIGH);
       digitalWrite(Red, LOW);
+      delay(3000);
+      digitalWrite(Red, HIGH);
       break;
 
     case 8://rapid fire 8s
@@ -160,7 +115,7 @@ void runsequence() {
       delay(8000);
       digitalWrite(Green, HIGH);
       digitalWrite(Red, LOW);
-      delay(10000);
+      delay(3000);
       digitalWrite(Red, HIGH);
       break;
   }

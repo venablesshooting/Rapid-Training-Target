@@ -22,7 +22,14 @@ void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
   Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");
 }
  
+bool sendFlag = false;
+ 
 void setup() {
+  pinMode(GPIO_NUM_8, OUTPUT);
+  pinMode(GPIO_NUM_4, INPUT_PULLDOWN);
+  pinMode(GPIO_NUM_5, INPUT_PULLDOWN);
+  pinMode(GPIO_NUM_6, INPUT_PULLDOWN);
+  
   // Init Serial Monitor
   Serial.begin(115200);
  
@@ -49,16 +56,42 @@ void setup() {
     Serial.println("Failed to add peer");
     return;
   }
-  myData.b = 8;
-   esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
 }
  
 void loop() {
   // Set values to send
+  if(digitalRead(GPIO_NUM_4)){
+    if(!sendFlag){
+    myData.b = 8;
+    digitalWrite(GPIO_NUM_8,LOW);
+    esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
+    sendFlag = true;
+    delay(10000);
+    }
+  }
+  else if(digitalRead(GPIO_NUM_5)){
+    if(!sendFlag){
+    myData.b = 6;
+    digitalWrite(GPIO_NUM_8,LOW);
+    esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
+    sendFlag = true;
+    delay(10000);
+    }
+   
+  }
+  else if(digitalRead(GPIO_NUM_6)){
+    if(!sendFlag){
+    myData.b = 4;
+    digitalWrite(GPIO_NUM_8,LOW);
+    esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
+    sendFlag = true;
+    delay(10000);
+    }
+  }else{
+    sendFlag = false;
+  }
   
-  
-  
-  
+  digitalWrite(GPIO_NUM_8,HIGH);
   // Send message via ESP-NOW
  
    
