@@ -1105,58 +1105,6 @@
         )
       )
     )
-    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+5V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+5V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+5V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+5V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
   )
 
   (junction (at 149.86 113.03) (diameter 0) (color 0 0 0 0)
@@ -2022,36 +1970,6 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 58.42 21.59 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 26606270-2286-45b1-9611-5f9c46d7f6c9)
-    (property "Reference" "#PWR03" (at 58.42 25.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 58.42 16.51 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 58.42 21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 58.42 21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9e3682c1-a582-49b0-a479-c9d3ebf7a9d6))
-    (instances
-      (project "Rapid Training Target"
-        (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-      (project "Training Aid-B"
-        (path "/e219089c-061e-4d60-9bdd-f96cb714b740"
-          (reference "#PWR0102") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:LED_ARBG") (at 40.64 30.48 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 316a7244-9ace-4fd5-b667-133514770258)
@@ -2088,7 +2006,7 @@
   (symbol (lib_id "Device:R") (at 38.1 166.37 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 34f6ae11-370e-4432-b105-8756d3d1c9df)
-    (property "Reference" "R4" (at 40.64 165.1 0)
+    (property "Reference" "R1" (at 40.64 165.1 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5k1" (at 40.64 167.64 0)
@@ -2105,7 +2023,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "R4") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -2114,7 +2032,7 @@
   (symbol (lib_id "Device:C") (at 45.72 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 433a2c1f-7c6d-47f9-b7e7-1e28e970e4e0)
-    (property "Reference" "C1" (at 49.53 105.41 0)
+    (property "Reference" "C2" (at 49.53 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 49.53 107.95 0)
@@ -2131,7 +2049,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "C1") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -2181,7 +2099,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 269.24 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4dbb6e25-8e53-44ef-bc42-3e2bdbfe343d)
-    (property "Reference" "H2" (at 271.78 20.4216 0)
+    (property "Reference" "H1" (at 271.78 20.4216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (at 271.78 22.733 0)
@@ -2196,7 +2114,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "H2") (unit 1)
+          (reference "H1") (unit 1)
         )
       )
       (project "Training Aid-B"
@@ -2210,7 +2128,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 269.24 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5007d592-2505-4cfb-97a4-424474ff6cd8)
-    (property "Reference" "H3" (at 271.78 26.7716 0)
+    (property "Reference" "H2" (at 271.78 26.7716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (at 271.78 29.083 0)
@@ -2225,7 +2143,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "H3") (unit 1)
+          (reference "H2") (unit 1)
         )
       )
       (project "Training Aid-B"
@@ -2352,6 +2270,31 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 58.42 21.59 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8be8beb1-5be0-49cb-9630-2257314405a1)
+    (property "Reference" "#PWR02" (at 58.42 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 58.42 16.51 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 58.42 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 58.42 21.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 99ef8849-584b-425e-af70-074dd6ea57ae))
+    (instances
+      (project "Rapid Training Target"
+        (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
+          (reference "#PWR02") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_name "+5V_2") (lib_id "power:+5V") (at 30.48 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 96903583-0814-4932-94cd-33339f2dedec)
@@ -2380,7 +2323,7 @@
   (symbol (lib_id "Device:R") (at 88.9 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a3ddbc8a-5830-49a4-a953-e8d78828dbf1)
-    (property "Reference" "R3" (at 85.09 54.61 0)
+    (property "Reference" "R4" (at 85.09 54.61 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2.7k" (at 82.55 57.15 0)
@@ -2397,7 +2340,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "R3") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
       (project "Training Aid-B"
@@ -2477,7 +2420,7 @@
   (symbol (lib_id "Device:R") (at 99.06 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c52aa1ec-dec9-410e-ab03-fa86d2dfdd7e)
-    (property "Reference" "R2" (at 100.33 44.45 0)
+    (property "Reference" "R3" (at 100.33 44.45 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.5k" (at 100.33 46.99 0)
@@ -2494,7 +2437,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "R2") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
       (project "Training Aid-B"
@@ -2635,7 +2578,7 @@
   (symbol (lib_id "Device:C") (at 21.59 106.68 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e46c797b-207d-49f8-9bc1-0c4d7f538553)
-    (property "Reference" "C2" (at 17.78 105.41 0)
+    (property "Reference" "C1" (at 17.78 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 17.78 107.95 0)
@@ -2652,7 +2595,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "C2") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -2716,7 +2659,7 @@
   (symbol (lib_id "Device:R") (at 93.98 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fb5ae3c5-e036-4437-a506-565021ef1689)
-    (property "Reference" "R1" (at 90.17 49.53 0)
+    (property "Reference" "R2" (at 90.17 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5.6k" (at 88.9 52.07 0)
@@ -2733,7 +2676,7 @@
     (instances
       (project "Rapid Training Target"
         (path "/9fedd953-8356-4168-99e6-03d50e1e6951"
-          (reference "R1") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
       (project "Training Aid-B"
