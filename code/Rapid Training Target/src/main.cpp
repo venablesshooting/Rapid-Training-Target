@@ -84,36 +84,37 @@ void runsequence() {
     case 0:
       break;        
     case 4: //rapid 4s
-      analogWrite(Red, LOW);
-      delay(7000);
-      digitalWrite(Red, HIGH);
-      digitalWrite(Green, LOW);
-      delay(4000);
-      digitalWrite(Green, HIGH);
       digitalWrite(Red, LOW);
       delay(3000);
       digitalWrite(Red, HIGH);
+      analogWrite(Green, 192);
+      delay(4000);
+      analogWrite(Green, 255);
+      digitalWrite(Red, LOW);
+      delay(3000);
+      digitalWrite(Red, HIGH);
+
       break;
 
     case 6: //rapid 6s
-     analogWrite(Red, LOW);
-      delay(7000);
+      digitalWrite(Red, LOW);
+      delay(3000);
       digitalWrite(Red, HIGH);
-      digitalWrite(Green, LOW);
+      analogWrite(Green, 192);
       delay(6000);
-      digitalWrite(Green, HIGH);
+      analogWrite(Green, 255);
       digitalWrite(Red, LOW);
       delay(3000);
       digitalWrite(Red, HIGH);
       break;
 
     case 8://rapid fire 8s
-      analogWrite(Red, LOW);
-      delay(7000);
+      digitalWrite(Red, LOW);
+      delay(3000);
       digitalWrite(Red, HIGH);
-      digitalWrite(Green, LOW);
+      analogWrite(Green, 192);
       delay(8000);
-      digitalWrite(Green, HIGH);
+      analogWrite(Green, 255);
       digitalWrite(Red, LOW);
       delay(3000);
       digitalWrite(Red, HIGH);
