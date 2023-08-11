@@ -649,7 +649,7 @@
         )
       )
     )
-    (model "${KIPRJMOD}/3d/ESP32-C3-MINI-1-N4.STEP"
+    (model "D:/Users/Thomas/Documents/GitHub/ESP32-C3-DevKit-Lipo/HARDWARE/ESP32-C3-DevKit-Lipo_Rev_B/3d/ESP32-C3-MINI-1-N4.STEP"
       (offset (xyz 0 2.7178 -0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -1494,7 +1494,7 @@
       (net 1 "+5V") (pinfunction "VBUS") (pintype "power_in") (solder_paste_margin -0.01) (tstamp e664bfd0-6285-41d7-8d81-68ea226912dd))
     (pad "B12" smd rect (at -3.932 3.075 90) (size 0.3 1.15) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "GND") (pinfunction "GND") (pintype "power_in") (solder_paste_margin -0.01) (tstamp 11159bd2-2446-4f54-9500-99a2a20a4b90))
-    (model "${KIPRJMOD}/3d/USB4105-GF-A.stp"
+    (model "D:/Users/Thomas/Documents/GitHub/ESP32-C3-DevKit-Lipo/HARDWARE/ESP32-C3-DevKit-Lipo_Rev_B/3d/USB4105-GF-A.stp"
       (offset (xyz 3.75 -16.04 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 -90))
@@ -1774,6 +1774,11 @@
       (net 41 "+3V0") (pinfunction "+") (pintype "passive") (thermal_bridge_angle 45) (tstamp 804bd070-4a40-480d-9ade-7d4ebffb5b19))
     (pad "2" connect circle (at 0 0) (size 17.8 17.8) (layers "F.Cu" "F.Mask")
       (net 2 "GND") (pinfunction "-") (pintype "passive") (tstamp 639200fe-ea83-48e6-b1bb-1eeaee056010))
+    (model "D:/Users/Thomas/Documents/GitHub/Rapid-Training-Target/Hardware/CAD/coincell Cover.STEP"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
+    )
   )
 
   (footprint "Personal:TS-1177-C-B-B" (layer "B.Cu")
@@ -1820,6 +1825,11 @@
       (net 10 "+3V3") (pinfunction "3") (pintype "bidirectional") (thermal_bridge_angle 45) (tstamp be83e84e-219e-4f9a-8609-8fc9ed584ee8))
     (pad "P4" smd roundrect (at 1.8 -1.1 180) (size 0.9 0.6) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.2116666667)
       (net 10 "+3V3") (pinfunction "4") (pintype "bidirectional") (thermal_bridge_angle 45) (tstamp f687ba9e-70dd-43e2-b1f0-992021cba082))
+    (model "D:/Users/Thomas/Documents/GitHub/Rapid-Training-Target/Hardware/CAD/switch.STEP"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "Personal:TS-1177-C-B-B" (layer "B.Cu")
@@ -1866,6 +1876,11 @@
       (net 10 "+3V3") (pinfunction "3") (pintype "bidirectional") (thermal_bridge_angle 45) (tstamp 43c028ba-563d-427b-87b7-9a7c41a45353))
     (pad "P4" smd roundrect (at 1.8 -1.1 180) (size 0.9 0.6) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.2116666667)
       (net 10 "+3V3") (pinfunction "4") (pintype "bidirectional") (thermal_bridge_angle 45) (tstamp 0f2de7e3-dd49-4cda-bb96-1f92b54c0b6a))
+    (model "D:/Users/Thomas/Documents/GitHub/Rapid-Training-Target/Hardware/CAD/switch.STEP"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "Personal:TS-1177-C-B-B" (layer "B.Cu")
@@ -1912,6 +1927,11 @@
       (net 10 "+3V3") (pinfunction "3") (pintype "bidirectional") (thermal_bridge_angle 45) (tstamp 6ce566c7-3a6f-4b95-b00a-799cb7e8f08e))
     (pad "P4" smd roundrect (at 1.8 -1.1 180) (size 0.9 0.6) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.2116666667)
       (net 10 "+3V3") (pinfunction "4") (pintype "bidirectional") (thermal_bridge_angle 45) (tstamp 37844f16-9b4c-48c3-8df1-d0f9ce108320))
+    (model "D:/Users/Thomas/Documents/GitHub/Rapid-Training-Target/Hardware/CAD/switch.STEP"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (gr_rect (start 134.5 68.6) (end 168.7 124.7)

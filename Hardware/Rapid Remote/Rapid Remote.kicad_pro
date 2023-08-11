@@ -441,7 +441,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../CAD/Remote/Rapid Remote.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
