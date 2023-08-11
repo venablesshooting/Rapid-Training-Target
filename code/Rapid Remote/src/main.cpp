@@ -25,20 +25,19 @@ void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
 bool sendFlag = false;
  
 void setup() {
-  pinMode(GPIO_NUM_8, OUTPUT);
-  pinMode(GPIO_NUM_4, INPUT_PULLDOWN);
-  pinMode(GPIO_NUM_5, INPUT_PULLDOWN);
-  pinMode(GPIO_NUM_6, INPUT_PULLDOWN);
+  pinMode(GPIO_NUM_3, OUTPUT); // LDO enable
+  digitalWrite(GPIO_NUM_3, HIGH); // Initialise holding the LDO on until button released
+  pinMode(GPIO_NUM_6, INPUT); // 8s
+  pinMode(GPIO_NUM_7, INPUT); // 6s
+  pinMode(GPIO_NUM_8, INPUT); // 4s
   
-  // Init Serial Monitor
-  Serial.begin(115200);
- 
-  // Set device as a Wi-Fi Station
-  WiFi.mode(WIFI_STA);
+  
+  Serial.begin(115200);// Init Serial Monitor
+  WiFi.mode(WIFI_STA);// Set device as a Wi-Fi Station
 
-  // Init ESP-NOW
-  if (esp_now_init() != ESP_OK) {
-    Serial.println("Error initializing ESP-NOW");
+ 
+  if (esp_now_init() != ESP_OK) { // Init ESP-NOW
+    //Serial.println("Error initializing ESP-NOW");
     return;
   }
 
@@ -53,46 +52,41 @@ void setup() {
   
   // Add peer        
   if (esp_now_add_peer(&peerInfo) != ESP_OK){
-    Serial.println("Failed to add peer");
+    //Serial.println("Failed to add peer");
     return;
   }
 }
  
 void loop() {
   // Set values to send
-  if(digitalRead(GPIO_NUM_4)){
+  if(digitalRead(GPIO_NUM_6)){
     if(!sendFlag){
     myData.b = 8;
-    digitalWrite(GPIO_NUM_8,LOW);
     esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
     sendFlag = true;
-    delay(10000);
+    //delay(10000);
     }
   }
-  else if(digitalRead(GPIO_NUM_5)){
+  else if(digitalRead(GPIO_NUM_7)){
     if(!sendFlag){
     myData.b = 6;
-    digitalWrite(GPIO_NUM_8,LOW);
     esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
     sendFlag = true;
-    delay(10000);
+    //delay(10000);
     }
    
   }
-  else if(digitalRead(GPIO_NUM_6)){
+  else if(digitalRead(GPIO_NUM_8)){
     if(!sendFlag){
     myData.b = 4;
-    digitalWrite(GPIO_NUM_8,LOW);
     esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
     sendFlag = true;
-    delay(10000);
+    //delay(10000);
     }
   }else{
     sendFlag = false;
   }
   
-  digitalWrite(GPIO_NUM_8,HIGH);
+  digitalWrite(GPIO_NUM_3,LOW); // turn off the LDO
   // Send message via ESP-NOW
- 
-   
 }
