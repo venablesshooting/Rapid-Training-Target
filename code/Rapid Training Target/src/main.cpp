@@ -88,7 +88,7 @@ void runsequence() {
       delay(3000);
       digitalWrite(Red, HIGH);
       analogWrite(Green, 192);
-      delay(4000);
+      delay(4300);
       analogWrite(Green, 255);
       digitalWrite(Red, LOW);
       delay(3000);
@@ -101,7 +101,7 @@ void runsequence() {
       delay(3000);
       digitalWrite(Red, HIGH);
       analogWrite(Green, 192);
-      delay(6000);
+      delay(6300);
       analogWrite(Green, 255);
       digitalWrite(Red, LOW);
       delay(3000);
@@ -113,7 +113,7 @@ void runsequence() {
       delay(3000);
       digitalWrite(Red, HIGH);
       analogWrite(Green, 192);
-      delay(8000);
+      delay(8300);
       analogWrite(Green, 255);
       digitalWrite(Red, LOW);
       delay(3000);
