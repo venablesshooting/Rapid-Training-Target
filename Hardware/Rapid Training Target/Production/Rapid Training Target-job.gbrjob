@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "7.0.6"
     },
-    "CreationDate": "2023-07-26T13:57:22+01:00"
+    "CreationDate": "2023-08-30T13:03:23+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "Rapid Training Target",
       "GUID": "52617069-6420-4547-9261-696e696e6720",
-      "Revision": "B"
+      "Revision": "C"
     },
     "Size": {
       "X": 207.6029,
