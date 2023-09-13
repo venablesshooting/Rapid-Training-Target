@@ -85,9 +85,9 @@ void runsequence() {
       break;        
     case 4: //rapid 4s
       digitalWrite(Red, LOW);
-      delay(3000);
+      delay(7000);
       digitalWrite(Red, HIGH);
-      analogWrite(Green, 192);
+      analogWrite(Green, 245);
       delay(4300);
       analogWrite(Green, 255);
       digitalWrite(Red, LOW);
@@ -98,9 +98,9 @@ void runsequence() {
 
     case 6: //rapid 6s
       digitalWrite(Red, LOW);
-      delay(3000);
+      delay(7000);
       digitalWrite(Red, HIGH);
-      analogWrite(Green, 192);
+      analogWrite(Green, 245);
       delay(6300);
       analogWrite(Green, 255);
       digitalWrite(Red, LOW);
@@ -110,9 +110,9 @@ void runsequence() {
 
     case 8://rapid fire 8s
       digitalWrite(Red, LOW);
-      delay(3000);
+      delay(7000);
       digitalWrite(Red, HIGH);
-      analogWrite(Green, 192);
+      analogWrite(Green, 245);
       delay(8300);
       analogWrite(Green, 255);
       digitalWrite(Red, LOW);
