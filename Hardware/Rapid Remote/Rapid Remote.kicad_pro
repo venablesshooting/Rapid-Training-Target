@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 3.2,
+          "height": 3.2,
+          "width": 3.2
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -56,17 +56,11 @@
         }
       ],
       "drc_exclusions": [
+        "clearance|139600000|102100000|badb384e-0890-434b-b672-8d081fa11a1b|a5574dea-f88f-476d-98d5-f6868e09db72",
         "hole_clearance|149187000|117125000|a7b9368c-1391-49a1-9ec5-4bb94d933e18|58bb6113-9492-4ece-aaff-802b7289ef35",
         "hole_clearance|149271000|117209000|792efd2f-0d4d-44c7-a27f-2fa577457a42|58bb6113-9492-4ece-aaff-802b7289ef35",
         "hole_clearance|153929000|117209000|c6236168-6e85-4810-b2eb-aac133edc6b2|05f19876-7de8-4385-b47d-43155b1b87f7",
-        "silk_edge_clearance|145000000|68600000|a2a8add5-2134-4d92-9f63-836d7b357773|11e57d80-fc6a-4b3b-a598-782edb0d1445",
-        "silk_edge_clearance|145000000|68600000|a2a8add5-2134-4d92-9f63-836d7b357773|3080765e-90cf-40b5-9f10-9b58469476b3",
-        "silk_edge_clearance|147130000|124618000|a2a8add5-2134-4d92-9f63-836d7b357773|a570e98b-096a-4b58-9826-6487df68a4b3",
-        "silk_edge_clearance|147130000|124618000|a2a8add5-2134-4d92-9f63-836d7b357773|bcef4b94-5e1f-4253-9de0-42c183d33b2d",
-        "silk_edge_clearance|156070000|124618000|a2a8add5-2134-4d92-9f63-836d7b357773|99de1c44-ce93-4393-9f1f-1ad96087599c",
-        "silk_edge_clearance|158200000|68600000|a2a8add5-2134-4d92-9f63-836d7b357773|624fdcd3-2a8c-4b84-a47d-0dfd89f9c832",
-        "silk_edge_clearance|158200000|68600000|a2a8add5-2134-4d92-9f63-836d7b357773|6ff61604-113f-4a8d-8d52-0f1fd10fc633",
-        "silk_edge_clearance|158200000|68600000|a2a8add5-2134-4d92-9f63-836d7b357773|7c35fbf2-a026-4c84-8ea1-58cbf02edab3"
+        "silk_edge_clearance|145000000|63200000|486084bc-958b-48ef-9097-26c82be2e466|3080765e-90cf-40b5-9f10-9b58469476b3"
       ],
       "meta": {
         "version": 2
@@ -125,7 +119,7 @@
         "max_error": 0.005,
         "min_clearance": 0.127,
         "min_connection": 0.127,
-        "min_copper_edge_clearance": 0.3,
+        "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.5,
         "min_microvia_diameter": 0.19999999999999998,
