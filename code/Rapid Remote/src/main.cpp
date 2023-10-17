@@ -27,9 +27,9 @@ bool sendFlag = false;
 void setup() {
   pinMode(GPIO_NUM_3, OUTPUT); // LDO enable
   digitalWrite(GPIO_NUM_3, HIGH); // Initialise holding the LDO on until button released
-  pinMode(GPIO_NUM_6, INPUT); // 8s
-  pinMode(GPIO_NUM_7, INPUT); // 6s
-  pinMode(GPIO_NUM_8, INPUT); // 4s
+  pinMode(GPIO_NUM_5, INPUT); // 8s
+  pinMode(GPIO_NUM_6, INPUT); // 6s
+  pinMode(GPIO_NUM_7, INPUT); // 4s
   
   
   Serial.begin(115200);// Init Serial Monitor
@@ -55,11 +55,8 @@ void setup() {
     //Serial.println("Failed to add peer");
     return;
   }
-}
- 
-void loop() {
-  // Set values to send
-  if(digitalRead(GPIO_NUM_6)){
+
+   if(digitalRead(GPIO_NUM_5)){
     if(!sendFlag){
     myData.b = 8;
     esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
@@ -67,7 +64,7 @@ void loop() {
     //delay(10000);
     }
   }
-  else if(digitalRead(GPIO_NUM_7)){
+  else if(digitalRead(GPIO_NUM_6)){
     if(!sendFlag){
     myData.b = 6;
     esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
@@ -76,7 +73,7 @@ void loop() {
     }
    
   }
-  else if(digitalRead(GPIO_NUM_8)){
+  else if(digitalRead(GPIO_NUM_7)){
     if(!sendFlag){
     myData.b = 4;
     esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
@@ -86,6 +83,11 @@ void loop() {
   }else{
     sendFlag = false;
   }
+}
+ 
+void loop() {
+  // Set values to send
+ 
   
   digitalWrite(GPIO_NUM_3,LOW); // turn off the LDO
   // Send message via ESP-NOW
