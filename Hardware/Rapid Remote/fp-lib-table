@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "rapidtraining")(type "KiCad")(uri "C:/Users/TomWhyte-Venables/Documents/GitHub/Rapid-Training-Target/Hardware/rapidtraining.pretty")(options "")(descr ""))
+)
