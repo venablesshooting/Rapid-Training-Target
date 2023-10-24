@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="231mm"
+   height="39mm"
+   viewBox="0 0 231 39"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="Precision.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.2916787"
+     inkscape:cx="455.12488"
+     inkscape:cy="157.30826"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="fill:#ffffff;stroke-width:0.242149"
+       id="rect1"
+       width="231"
+       height="39"
+       x="-2.1684043e-19"
+       y="0" />
+  </g>
+  <circle
+     style="display:inline;fill:#000000;stroke-width:0.314005"
+     id="path2-2-4"
+     cx="115.50001"
+     cy="19.5"
+     r="6" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:inline">
+    <circle
+       style="display:inline;fill:#000000;stroke-width:0.314005"
+       id="path2-2-4-5"
+       cx="160.5"
+       cy="19.5"
+       r="6" />
+    <circle
+       style="display:inline;fill:#000000;stroke-width:0.314005"
+       id="path2-2-4-8"
+       cx="205.5"
+       cy="19.5"
+       r="6" />
+    <circle
+       style="display:inline;fill:#000000;stroke-width:0.314005"
+       id="path2-2-4-59"
+       cx="70.500008"
+       cy="19.5"
+       r="6" />
+    <circle
+       style="display:inline;fill:#000000;stroke-width:0.314005"
+       id="path2-2-4-1"
+       cx="25.5"
+       cy="19.5"
+       r="6" />
+  </g>
+</svg>

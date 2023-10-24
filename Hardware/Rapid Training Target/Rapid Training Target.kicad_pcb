@@ -21319,10 +21319,10 @@
     (fill yes (thermal_gap 0.5) (thermal_bridge_width 0.5))
     (polygon
       (pts
-        (xy 33.79 74.644)
-        (xy 245.57 74.533)
-        (xy 246.689 102.766)
-        (xy 34.909 102.877)
+        (xy 35.025 77.975)
+        (xy 242.5 77.95)
+        (xy 242.45 100)
+        (xy 35 100)
       )
     )
     (filled_polygon
@@ -22800,10 +22800,10 @@
     (fill yes (thermal_gap 0.5) (thermal_bridge_width 0.5))
     (polygon
       (pts
-        (xy 34.228 71.52)
-        (xy 246.445 72.155)
-        (xy 245.991 105.025)
-        (xy 33.774 104.39)
+        (xy 35.1 77.925)
+        (xy 242.5 77.95)
+        (xy 242.45 100)
+        (xy 35.075 99.95)
       )
     )
     (filled_polygon
