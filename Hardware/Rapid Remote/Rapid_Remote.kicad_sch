@@ -2457,6 +2457,11 @@
     (uuid ffa0c781-452c-4626-9437-156d482afccc)
   )
 
+  (text "5k for 400mA\n7.5k for 250mA" (at 77.47 99.06 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid fbd30ab8-edb1-4c2a-870a-1038daf437c3)
+  )
+
   (global_label "USB_D+" (shape input) (at 31.75 154.94 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 0801e9b3-9a46-45ea-900c-5ab4ec1e76a7)
@@ -3375,7 +3380,7 @@
     (property "Reference" "R6" (at 73.8886 93.98 0)
       (effects (font (size 1.778 1.5113)) (justify left bottom))
     )
-    (property "Value" "47.5k" (at 69.088 93.98 0)
+    (property "Value" "5k" (at 69.088 93.98 0)
       (effects (font (size 1.778 1.5113)) (justify left bottom))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 72.39 97.79 0)
@@ -3568,7 +3573,7 @@
     )
   )
 
-  (symbol (lib_name "BUTTON_4PIN_TS_1177_2") (lib_id "personal2:BUTTON_4PIN_TS_1177") (at 198.12 41.91 0) (unit 1)
+  (symbol (lib_id "personal2:BUTTON_4PIN_TS_1177") (at 198.12 41.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6e8864f7-67fe-4e95-b188-0521849dd425)
     (property "Reference" "s1" (at 198.12 33.02 0)
@@ -3577,7 +3582,7 @@
     (property "Value" "BUTTON_4PIN_TS_1177" (at 198.12 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "rapidtraining:TS-1177-C-B-B" (at 198.12 41.91 0)
+    (property "Footprint" "Personal:TS-1177-C-B-B" (at 198.12 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 198.12 41.91 0)
