@@ -4,4 +4,4 @@ It is currently configured for the 8s, 6s, and 4s series with a button for each,
 
 I have utilised the ESPNOW protocol to communicate over the 2.4GHz spectrum between remote and training box. The remote uses a low power latching circuit which enables a button push to turn on, intilise connection, and send data packet before returning to a ~3uA sleep state.
 
-I strongly believe in OpenSource and have left the current state of code and hardware uploaded for others to use and modify but if you would like to purchase one, please contact me directly.
+I strongly believe in OpenSource and have left the current state of code and hardware uploaded for others to use and modify but if you would like to purchase one, please use my Etsy https://www.etsy.com/uk/listing/1743482885/rapid-fire-training-box .
